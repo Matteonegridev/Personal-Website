@@ -1,0 +1,162 @@
+@use "../scss/functions" as f;
+@use "../scss/fonts" as font;
+@use "../scss/mixins" as *;
+
+$p-color: hsl(272, 100%, 52%);
+$s-color: hsl(272, 100%, 64%);
+$t-color: hsl(272, 92%, 90%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 20%);
+
+header {
+  background: $p-color;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  padding: f.rem(16);
+  min-height: f.rem(50);
+}
+
+// .navbar__links {
+//   display: none;
+// }
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  top: f.rem(40);
+  right: f.rem(35);
+  @include trans-ease;
+
+  //* MENU BARS CON ::AFTER E ::BEFORE PER CREARE ALTRE BARS
+
+  &__burger {
+    position: relative;
+    width: f.rem(25);
+    height: f.rem(2);
+    margin-bottom: f.rem(5);
+    background: $white;
+    display: block;
+    @include trans-ease;
+
+    //! ::before and ::after sempre position:absolute
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: f.rem(-8);
+      width: f.rem(25);
+      height: f.rem(2);
+      background: $white;
+      @include trans-ease;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: f.rem(8);
+      width: f.rem(25);
+      height: f.rem(2);
+      background: $white;
+      @include trans-ease;
+    }
+
+    //* TOGGLE MENU PER JAVASCRIPT
+
+    //! IL TRANSPARENT FA SCOMPARIRE LA LINEA CENTRALE
+
+    &.open {
+      transform: rotate(360deg);
+      background: transparent;
+
+      //* CREA UNA X
+
+      &::before {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+      &::after {
+        transform: rotate(45deg);
+        top: 0;
+      }
+    }
+  }
+}
+.navbar__menu {
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  visibility: hidden;
+
+  &.open {
+    visibility: visible;
+  }
+
+  .navbar__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    background: $p-color;
+    transform: translateY(-100%);
+    @include trans-ease;
+
+    &.open {
+      transform: translateY(0);
+    }
+    .items {
+      padding: f.rem(20);
+      font-size: f.rem(24);
+      text-align: center;
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+
+        &:hover {
+          background: $s-color;
+          transition: background 250ms ease-in;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// @for $i from 1 through 4 {
+//   .navbar__links--items:nth-child(#{$i}) {
+//     transition-delay: ($i * 0.1s);
+//   }
+// }
+
+@include media-m {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .navbar__menu {
+    visibility: visible;
+
+    .navbar__links {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      text-align: right;
+    }
+    .items {
+      display: inline-block;
+      cursor: pointer;
+
+      &__link {
+        font-size: f.rem(18);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+// gap: calc((100vw - 97vw) / 2 + 2vw);

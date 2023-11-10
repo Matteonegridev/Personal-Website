@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--* link corretto per fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/dist/main.css" />
+    <title>Matteo Negri - Web Developer</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+      <div class="logo__name">
+        <div class="logo">MatteoNegri<span>.DEV</span></div>
+      </div>
+      <nav class="navbar__menu">
+        <ul class="navbar__links">
+          <li class="items">
+            <a class="items__link" href="paginaweb.html">Home</a>
+          </li>
+          <li class="items">
+            <a class="items__link" href="Projects.html">Projects</a>
+          </li>
+          <li class="items">
+            <a class="items__link" href="about.html">About me</a>
+          </li>
+          <li class="items">
+            <a class="items__link" href="contacts.html">Contacts</a>
+          </li>
+
+          <div class="social__icons social__icons-projects">
+            <a href="https://www.instagram.com/_matteonegri/" target="_blank">
+              <i class="fa-brands fa-brands-projects fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://github.com/Matteonegridev" target="_blank">
+              <i class="fa-brands fa-brands-projects fa-github fa-lg"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/matteonegri17/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-brands-projects fa-linkedin fa-lg"></i>
+            </a>
+          </div>
+          <footer class="footer-projects">&copy; Copyright 2023</footer>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contacts">
+        <div class="contacts__about">
+          <h3 class="title">Let's stay in <span class="touch">touch</span></h3>
+          <p class="testo-form">
+            Your digital journey starts here! Reach out and get
+            <strong>ready</strong> to redefine your online presence.<br />
+            Let's turn your ideas into <strong>reality</strong> by creating a
+            website that speaks your brand's language!
+          </p>
+        </div>
+        <form
+          action=""
+          method="post"
+          class="form-sito"
+          enctype="multipart/form-data"
+        >
+          <section class="wrapper__form">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="" required />
+              <span class="name-label">First Name</span>
+            </div>
+            <div class="form-row">
+              <input type="text" name="last-name" placeholder="" required />
+              <span class="name-label">Last Name</span>
+            </div>
+            <div class="form-row">
+              <input type="email" name="email" placeholder="" required />
+
+              <label for="email" class="name-label">Email</label>
+
+              <span class="error-message"
+                >Please enter a valid e-mail address</span
+              >
+            </div>
+
+            <!-- <div class="form-row">
+              <label for="name" class="name label">Name</label>
+              <input
+                class="input-box"
+                type="text"
+                name="Name"
+                id="name"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="last-name" class="lastname label">Last name</label>
+              <input
+                class="input-box"
+                type="text"
+                name="Last name"
+                id="last-name"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email" class="email label">Email</label>
+              <input
+                class="input-box"
+                id="email"
+                name="email"
+                type="email"
+                required
+              />
+            </div> -->
+            <div class="form-row">
+              <span class="name-label tx">Tell me about your idea:</span>
+              <textarea
+                class="input-box tx-area"
+                id="abstract"
+                name="abstract"
+              ></textarea>
+            </div>
+            <div class="buttons-row">
+              <input type="submit" value="Submit" class="submit btn" />
+              <input type="reset" value="Reset" class="reset btn" />
+            </div>
+          </section>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer__footer">&copy; Copyright 2023</footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+@use "../scss/functions" as f;
+@use "../scss/fonts" as *;
+@use "../scss/mixins" as m;
+
+$p-color: hsl(272, 100%, 52%);
+$s-color: hsl(272, 100%, 64%);
+$t-color: hsl(272, 92%, 90%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 20%);
+
+strong {
+  color: $p-color;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: f.rem(30);
+  margin-block: f.rem(10);
+  text-align: center;
+}
+.touch {
+  font-size: f.rem(30);
+  text-transform: uppercase;
+  font-weight: map-get($font-weights, "bold");
+  color: $p-color;
+}
+.testo-form {
+  text-align: justify;
+  font-size: f.rem(22);
+  line-height: 1.6;
+}
+@include m.media-m {
+  .testo-form {
+    margin-inline: calc((100vw - 95vw) / 2 + 7vw);
+    text-align: justify;
+    line-height: 1.6;
+  }
+}
+.contacts {
+  padding: f.rem(90) f.rem(10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__about {
+    text-align: justify;
+    margin: 0 auto;
+    width: 80vw;
+    margin-block: f.rem(30);
+    flex: 1 1 20%;
+  }
+}
+.wrapper__form {
+  flex: 1 1 80%;
+  border: 2px solid hsla(0, 0%, 70%, 0.2);
+  box-shadow: 0 4px 20px 1px rgba($black, 0.1);
+  padding: f.rem(0) f.rem(40) f.rem(30);
+  width: 80vw;
+}
+.form-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: f.rem(55);
+}
+
+input {
+  border: 1px solid lightgrey;
+  border-radius: f.rem(3);
+  outline: none;
+  width: 100%;
+  padding: f.rem(12);
+  color: $p-color;
+  font-size: f.rem(14);
+
+  &:focus {
+    outline: 1px solid $s-color;
+  }
+
+  &:is(:focus, :not(:placeholder-shown)) ~ .name-label {
+    color: $p-color;
+    transform: translateY(f.rem(-18)) translateX(f.rem(5));
+    background: $white;
+    padding-inline: f.rem(5);
+    font-size: f.rem(14);
+  }
+  &:invalid ~ .error-message {
+    visibility: visible;
+  }
+}
+
+.error-message {
+  @include m.center;
+  margin-top: f.rem(40);
+  color: red;
+  visibility: hidden;
+  font-size: f.rem(12);
+  width: max-content;
+}
+
+.name-label {
+  position: absolute;
+  top: f.rem(8);
+  margin-left: f.rem(10);
+  left: 0;
+  color: lightgrey;
+  font-size: f.rem(18);
+  pointer-events: none;
+  transition: all 350ms ease-in-out;
+}
+
+// .form-row {
+//   margin-block: f.rem(50);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   position: relative;
+
+//   .label {
+//     position: absolute;
+//     left: 0;
+//     top: 50%;
+//     color: lightgrey;
+//     font-size: f.rem(18);
+//     transform: translateY(-50%);
+//     transition: top 350ms ease-in;
+//     pointer-events: none;
+
+//     &:focus,
+//     &:valid {
+//       font-size: f.rem(18);
+//       color: $p-color;
+//       top: 0;
+//       transition: top 350ms ease-in;
+//     }
+
+//     // text-align: left;
+//     // font-size: f.rem(18);
+//     // padding: 0.5em;
+//     // color: $p-color;
+//     // text-transform: uppercase;
+//     // font-weight: map-get($font-weights, "bold");
+//     // margin-block: f.rem(5);
+//   }
+
+//   .input-box {
+//     width: 100%;
+//     padding: 1em;
+//     outline: none;
+//     border-radius: f.rem(0);
+//     border: none;
+//     border-bottom: 1px solid lightgrey;
+//     font-family: $font;
+//     background: transparent;
+
+//     &:focus {
+//       border-bottom: 2px solid $p-color;
+//       font-size: f.rem(18);
+//       color: $p-color;
+//       top: 0;
+//       transition: top 350ms ease-in;
+//     }
+//   }
+// }
+// // .input-box:focus ~ .label,
+// // .input-box:valid ~ .label {
+// //   border-bottom: 2px solid $p-color;
+// //   font-size: f.rem(18);
+// //   color: $p-color;
+// //   top: 0;
+// // }
+.buttons-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: f.rem(10);
+  flex-wrap: wrap;
+}
+.reset {
+  color: $p-color;
+  background: $p-color;
+  box-shadow: (0 50px $white inset);
+  transition: box-shadow 350ms ease-in-out;
+  outline: none;
+  border: 1px solid $p-color;
+  border-radius: f.rem(3);
+  font-size: f.rem(18);
+  padding: 0.5em 3em;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: (0 0 $white inset);
+    color: $white;
+    background: $p-color;
+    border: 1px solid $p-color;
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+}
+.submit {
+  background: $white;
+  color: $white;
+  box-shadow: (0 50px $p-color inset);
+  transition: box-shadow 350ms ease-in-out;
+  outline: none;
+  border: 1px solid $p-color;
+  border-radius: f.rem(3);
+  font-size: f.rem(18);
+  padding: 0.5em 3em;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: (0 0 $p-color inset);
+    color: $p-color;
+    background: $white;
+    border: 1px solid $p-color;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    border: none;
+  }
+}
+
+.tx-area {
+  resize: none;
+  font-family: $font;
+  font-size: f.rem(14);
+  outline: none;
+  border: 1px solid lightgray;
+  min-height: f.rem(100);
+  width: 100%;
+  margin-top: f.rem(50);
+  padding: f.rem(8);
+  color: $p-color;
+
+  &:focus {
+    outline: 1px solid $s-color;
+  }
+}
+.tx {
+  color: $s-color;
+}

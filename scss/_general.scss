@@ -1,0 +1,37 @@
+@use "functions" as f;
+@use "fonts" as font;
+$p-color: hsl(272, 100%, 52%);
+$s-color: hsl(272, 100%, 64%);
+$t-color: hsl(272, 92%, 90%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 20%);
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: font.$font; //Basier Circle
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}

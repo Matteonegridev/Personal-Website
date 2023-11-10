@@ -1,0 +1,31 @@
+@use "functions" as f;
+
+@font-face {
+  font-family: BebasNeue;
+  src: url(../BebasNeue-Regular.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Basier-circle";
+  src: url(../basiercircle-regular-webfont.woff2) format(woff2);
+}
+$font-bebas: "BebasNeue";
+$font: "Basier-circle";
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+$p-color: hsl(272, 100%, 52%);
+$s-color: hsl(272, 100%, 64%);
+$t-color: hsl(272, 92%, 90%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 20%);
+h1,
+h2,
+h3 {
+  font-weight: map-get($font-weights, "regular");
+}
+a {
+  color: $white;
+}

@@ -1,0 +1,132 @@
+@use "../scss/functions" as f;
+@use "../scss/fonts" as *;
+@use "../scss/mixins" as m;
+
+$p-color: hsl(272, 100%, 52%);
+$s-color: hsl(272, 100%, 64%);
+$t-color: hsl(272, 92%, 90%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 20%);
+
+.social__icons-projects {
+  position: absolute;
+  bottom: f.rem(16);
+  left: f.rem(20);
+  font-size: f.rem(25);
+
+  .fa-brands-projects:hover {
+    transform: scale(0.9);
+    transition: transform 150ms ease-in-out;
+  }
+}
+.footer-projects {
+  color: $white;
+  font-size: f.rem(10);
+  text-transform: capitalize;
+}
+.projects {
+  padding: f.rem(60) f.rem(10);
+}
+.headline {
+  text-align: center;
+  margin-block: f.rem(30);
+  border-bottom: none;
+  margin-block-end: f.rem(10);
+  // text-transform: uppercase;
+}
+.projects__items {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-auto-rows: 40vh;
+  gap: f.rem(16);
+  height: 100vh;
+}
+.projects__item {
+  position: relative;
+  overflow: hidden;
+
+  border-bottom: 7px solid $p-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: $p-color;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // border-radius: f.rem(10);
+    opacity: 0;
+    @include m.trans-ease;
+  }
+  &:hover {
+    &::after {
+      opacity: 0.9;
+      top: 0;
+    }
+    .projects__btn {
+      opacity: 1;
+    }
+  }
+
+  .projects__image {
+    opacity: 0.9;
+    width: 100%;
+    // border-bottom: 5px solid $p-color;
+    // border-radius: f.rem(10);
+    object-fit: fill;
+    aspect-ratio: 1;
+  }
+}
+
+.projects__btns {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  //! CENTRA I DUE BOTTONI ALL'IMMAGINE ▼
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+.projects__btn {
+  opacity: 0;
+  font-size: f.rem(18);
+  @include m.trans-ease;
+
+  &:hover {
+    color: $black;
+  }
+  &:active {
+    color: $white;
+  }
+}
+
+.fa-eye,
+.fab {
+  font-size: f.rem(20);
+  margin-right: f.rem(10);
+}
+@include m.media-m {
+  .footer-projects {
+    visibility: hidden;
+  }
+  .projects__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 45vh;
+    gap: f.rem(8);
+  }
+  .footer__footer {
+    position: static;
+    // visibility: hidden;
+  }
+  .headline {
+    text-align: center;
+    width: 100%;
+    margin-block-end: f.rem(10);
+    // text-transform: uppercase;
+  }
+}

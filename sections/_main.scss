@@ -1,0 +1,154 @@
+@use "../scss/functions" as f;
+@use "../scss/fonts" as *;
+@use "../scss/mixins" as m;
+
+$p-color: hsl(272, 100%, 52%);
+$s-color: hsl(272, 100%, 64%);
+$t-color: hsl(272, 92%, 90%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 20%);
+
+main {
+  .social__icons {
+    position: fixed;
+    bottom: f.rem(16);
+    left: f.rem(16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fa-brands {
+    font-size: f.rem(25);
+    color: $white;
+    margin-left: f.rem(16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $s-color;
+    height: f.rem(40);
+    width: f.rem(40);
+    border-radius: 50%;
+    flex-direction: row;
+    transition: transform 150ms ease-in-out;
+
+    &:visited {
+      background-color: $white;
+      border: 1px solid $black;
+      color: $black;
+    }
+    &:active {
+      background-color: $white;
+      border: 1px solid $black;
+      color: $black;
+      transition: all 250ms ease-in-out;
+    }
+    &:hover {
+      transform: scale(0.9);
+      transition: transform 150ms ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+
+.home {
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  padding-top: 40vh;
+  position: relative;
+
+  &__name {
+    font-size: f.rem(38);
+    // border-bottom: 1px solid $t-color;
+    // padding-bottom: f.rem(5);
+
+    &--last {
+      color: $s-color;
+      font-weight: map-get($font-weights, "bold");
+      font-size: f.rem(38);
+    }
+  }
+  .specifics {
+    // margin-top: 0;
+
+    &__videoscribe {
+      color: $s-color;
+      font-weight: map-get($font-weights, "bold");
+      font-size: f.rem(36);
+    }
+  }
+}
+.logo {
+  color: $white;
+  font-size: f.rem(30);
+  font-weight: map-get($font-weights, "bold");
+}
+span {
+  font-size: f.rem(20);
+  font-weight: map-get($font-weights, "regular");
+  color: $black;
+}
+@include m.media-m {
+  .logo {
+    position: relative;
+    z-index: 1;
+    width: min-content;
+  }
+
+  .home__image {
+    height: 800px;
+    width: 500px;
+    position: absolute;
+    top: f.rem(36);
+    right: f.rem(-80);
+    background: url(../foto.png) no-repeat;
+    background-size: contain;
+  }
+  .align-text {
+    text-align: left;
+    margin-left: f.rem(150);
+    line-height: 1.4;
+    font-size: 1.2em;
+  }
+
+  h1 {
+    border-bottom: 1px solid rgba($black, 0.3);
+    width: 510px;
+    margin-bottom: f.rem(12);
+  }
+  .home__name {
+    font-family: $font-bebas;
+    font-size: f.rem(62);
+
+    &--last {
+      font-family: inherit;
+      font-size: inherit;
+    }
+  }
+  .specifics__videoscribe {
+    // font-size: f.rem(62);
+    font-family: $font-bebas;
+  }
+}
+
+.diagonal {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    transform: skewY(-5deg);
+    inset: 0;
+    background: linear-gradient(
+      -45deg,
+      $s-color,
+      $t-color,
+      rgba($white, 0.1),
+      $t-color,
+      $s-color
+    );
+    z-index: -1;
+  }
+}

@@ -1,0 +1,17 @@
+@use "../scss/functions" as f;
+@use "../scss/fonts" as font;
+
+$p-color: hsl(272, 100%, 52%);
+$s-color: hsl(272, 100%, 64%);
+$t-color: hsl(272, 92%, 90%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 20%);
+
+footer {
+  position: fixed;
+  bottom: f.rem(16);
+  right: f.rem(16);
+  font-size: f.rem(11);
+  color: $black;
+  text-align: right;
+}

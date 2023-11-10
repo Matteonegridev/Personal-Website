@@ -1,0 +1,9 @@
+@forward "general";
+@use "fonts";
+@use "../sections/header";
+@use "../sections/main";
+@use "../sections/footer";
+@forward "mixins";
+@use "../sections/about";
+@use "../sections/projects";
+@use "../sections/contacts";
