@@ -735,4 +735,6 @@ input:invalid ~ .error-message {
 
 .tx {
   color: hsl(272, 100%, 64%);
+  width: max-content;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
