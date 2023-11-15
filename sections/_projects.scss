@@ -45,7 +45,6 @@ $black: hsl(0, 0%, 20%);
 .projects__item {
   position: relative;
   overflow: hidden;
-
   border-bottom: 7px solid $p-color;
 
   &::after {
@@ -76,7 +75,7 @@ $black: hsl(0, 0%, 20%);
     // border-bottom: 5px solid $p-color;
     // border-radius: f.rem(10);
     object-fit: fill;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1.5;
   }
 }
 

@@ -148,7 +148,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 811px) {
   .menu-btn {
     visibility: hidden;
   }
@@ -245,19 +245,19 @@ span {
   color: hsl(0, 0%, 20%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 811px) {
   .logo {
     position: relative;
     z-index: 1;
     width: min-content;
   }
   .home__image {
-    height: 800px;
+    height: 120vh;
     width: 500px;
     position: absolute;
     top: 2.25rem;
     right: -5rem;
-    background: url(../foto.png) no-repeat;
+    background: url(../foto.png) center no-repeat;
     background-size: contain;
   }
   .align-text {
@@ -398,7 +398,7 @@ footer {
   visibility: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 811px) {
   .social__icons-projects {
     visibility: hidden;
   }
@@ -506,7 +506,7 @@ footer {
   opacity: 0.9;
   width: 100%;
   object-fit: fill;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1.5;
 }
 
 .projects__btns {
@@ -541,7 +541,7 @@ footer {
   margin-right: 0.625rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 811px) {
   .footer-projects {
     visibility: hidden;
   }
@@ -589,7 +589,7 @@ strong {
   line-height: 1.6;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 811px) {
   .testo-form {
     margin-inline: 9.5vw;
     text-align: justify;
