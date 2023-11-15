@@ -14,7 +14,9 @@ $black: hsl(0, 0%, 20%);
   box-sizing: border-box;
 }
 :root {
-  color-scheme: light;
+  @media (prefers-color-scheme: dark) {
+    color-scheme: light;
+  }
 }
 html {
   font-family: font.$font; //Basier Circle
