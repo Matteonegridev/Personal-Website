@@ -146,6 +146,9 @@ header {
     transition: background 250ms ease-in;
     cursor: pointer;
   }
+  .navbar__menu .navbar__links .items .items__link {
+    padding: 1.25rem 6.25rem;
+  }
 }
 
 @media screen and (min-width: 811px) {

@@ -121,6 +121,9 @@ header {
           transition: background 250ms ease-in;
           cursor: pointer;
         }
+        .items__link {
+          padding: f.rem(20) f.rem(100);
+        }
       }
     }
   }
