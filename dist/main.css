@@ -24,9 +24,13 @@ a {
   box-sizing: border-box;
 }
 
+:root {
+  color-scheme: hsl(0, 0%, 100%);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: light;
+    color-scheme: hsl(0, 0%, 100%);
   }
 }
 html {
