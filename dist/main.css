@@ -24,6 +24,10 @@ a {
   box-sizing: border-box;
 }
 
+:root {
+  color-scheme: light;
+}
+
 html {
   font-family: "Basier-circle";
 }
@@ -145,6 +149,7 @@ header {
     background: hsl(272, 100%, 64%);
     transition: background 250ms ease-in;
     cursor: pointer;
+    pointer-events: none;
   }
   .navbar__menu .navbar__links .items .items__link {
     padding: 1.25rem 6.25rem;

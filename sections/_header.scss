@@ -120,6 +120,7 @@ header {
           background: $s-color;
           transition: background 250ms ease-in;
           cursor: pointer;
+          pointer-events: none;
         }
         .items__link {
           padding: f.rem(20) f.rem(100);
