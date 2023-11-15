@@ -13,8 +13,9 @@ $black: hsl(0, 0%, 20%);
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  @media (prefers-color-scheme: dark) {
+
+@media (prefers-color-scheme: dark) {
+  :root {
     color-scheme: light;
   }
 }
