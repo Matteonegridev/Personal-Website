@@ -145,11 +145,11 @@ span {
     inset: 0;
     background: linear-gradient(
       -45deg,
-      $s-color,
-      $t-color,
-      rgba($white, 0.1),
-      $t-color,
-      $s-color
+      $qq-color,
+      $q-color,
+      rgba($white, 0.2),
+      $q-color,
+      $qq-color
     );
     z-index: -1;
   }
