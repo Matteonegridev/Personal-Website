@@ -300,7 +300,7 @@ span {
   position: absolute;
   transform: skewY(-5deg);
   inset: 0;
-  background: linear-gradient(-45deg, hsl(262, 87%, 60%), hsl(272, 92%, 90%), rgba(255, 255, 255, 0.1), hsl(272, 92%, 90%), hsl(262, 87%, 60%));
+  background: linear-gradient(-45deg, hsl(262, 87%, 60%), hsl(262, 87%, 76%), rgba(255, 255, 255, 0.1), hsl(262, 87%, 76%), hsl(262, 87%, 60%));
   z-index: -1;
 }
 
@@ -344,7 +344,7 @@ footer {
 }
 .about .wrapper {
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
-  border: 1px solid hsl(272, 92%, 90%);
+  border: 1px solid hsl(262, 87%, 76%);
   height: 100vh;
   margin: 0 auto;
   padding: 0.625rem;
