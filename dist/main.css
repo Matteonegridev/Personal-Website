@@ -56,7 +56,7 @@ img {
 }
 
 header {
-  background: hsl(272, 100%, 52%);
+  background: hsl(262, 87%, 49%);
   width: 100%;
   position: fixed;
   z-index: 2;
@@ -130,7 +130,7 @@ header {
   justify-content: center;
   overflow: hidden;
   height: 100vh;
-  background: hsl(272, 100%, 52%);
+  background: hsl(262, 87%, 49%);
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
@@ -336,7 +336,7 @@ footer {
 .about .content {
   color: hsl(0, 0%, 100%);
   text-align: justify;
-  background: hsl(272, 100%, 52%);
+  background: hsl(262, 87%, 49%);
   border-radius: 0.3125rem;
   margin: 1rem 0.625rem 1rem; /*! top sides bottom */
   padding: 1rem;
@@ -376,7 +376,7 @@ footer {
 }
 
 .text-color {
-  color: hsl(272, 100%, 52%);
+  color: hsl(262, 87%, 49%);
 }
 
 .role-color {
@@ -441,7 +441,7 @@ footer {
     font-size: 1.125rem;
     color: hsl(0, 0%, 100%);
     text-align: left;
-    background: hsl(272, 100%, 52%);
+    background: hsl(262, 87%, 49%);
     border-radius: 0.3125rem;
     margin: 1rem 0.625rem 1rem; /*! top sides bottom */
     padding: 1rem;
@@ -491,12 +491,12 @@ footer {
 .projects__item {
   position: relative;
   overflow: hidden;
-  border-bottom: 7px solid hsl(272, 100%, 52%);
+  border-bottom: 7px solid hsl(262, 87%, 49%);
 }
 .projects__item::after {
   content: "";
   position: absolute;
-  background: hsl(272, 100%, 52%);
+  background: hsl(262, 87%, 49%);
   top: 100%;
   left: 0;
   width: 100%;
@@ -533,7 +533,7 @@ footer {
   opacity: 1;
   font-size: 1.125rem;
   transition: all 0.5s ease-in-out;
-  background: hsl(272, 100%, 52%);
+  background: hsl(262, 87%, 49%);
   border-radius: 1.25rem;
   padding: 0.5rem 0.75rem;
 }
@@ -575,7 +575,7 @@ footer {
   }
 }
 strong {
-  color: hsl(272, 100%, 52%);
+  color: hsl(262, 87%, 49%);
 }
 
 .title {
@@ -589,7 +589,7 @@ strong {
   font-size: 1.875rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: hsl(272, 100%, 52%);
+  color: hsl(262, 87%, 49%);
 }
 
 .testo-form {
@@ -641,14 +641,14 @@ input {
   outline: none;
   width: 100%;
   padding: 0.75rem;
-  color: hsl(272, 100%, 52%);
+  color: hsl(262, 87%, 49%);
   font-size: 0.875rem;
 }
 input:focus {
   outline: 1px solid hsl(272, 100%, 64%);
 }
 input:is(:focus, :not(:placeholder-shown)) ~ .name-label {
-  color: hsl(272, 100%, 52%);
+  color: hsl(262, 87%, 49%);
   transform: translateY(-1.125rem) translateX(0.3125rem);
   background: hsl(0, 0%, 100%);
   padding-inline: 0.3125rem;
@@ -690,12 +690,12 @@ input:invalid ~ .error-message {
 }
 
 .reset {
-  color: hsl(272, 100%, 52%);
-  background: hsl(272, 100%, 52%);
+  color: hsl(262, 87%, 49%);
+  background: hsl(262, 87%, 49%);
   box-shadow: 0 50px hsl(0, 0%, 100%) inset;
   transition: box-shadow 350ms ease-in-out;
   outline: none;
-  border: 1px solid hsl(272, 100%, 52%);
+  border: 1px solid hsl(262, 87%, 49%);
   border-radius: 0.1875rem;
   font-size: 1.125rem;
   padding: 0.5em 3em;
@@ -704,8 +704,8 @@ input:invalid ~ .error-message {
 .reset:hover {
   box-shadow: 0 0 hsl(0, 0%, 100%) inset;
   color: hsl(0, 0%, 100%);
-  background: hsl(272, 100%, 52%);
-  border: 1px solid hsl(272, 100%, 52%);
+  background: hsl(262, 87%, 49%);
+  border: 1px solid hsl(262, 87%, 49%);
 }
 .reset:active {
   transform: scale(0.97);
@@ -714,20 +714,20 @@ input:invalid ~ .error-message {
 .submit {
   background: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 100%);
-  box-shadow: 0 50px hsl(272, 100%, 52%) inset;
+  box-shadow: 0 50px hsl(262, 87%, 49%) inset;
   transition: box-shadow 350ms ease-in-out;
   outline: none;
-  border: 1px solid hsl(272, 100%, 52%);
+  border: 1px solid hsl(262, 87%, 49%);
   border-radius: 0.1875rem;
   font-size: 1.125rem;
   padding: 0.5em 3em;
   cursor: pointer;
 }
 .submit:hover {
-  box-shadow: 0 0 hsl(272, 100%, 52%) inset;
-  color: hsl(272, 100%, 52%);
+  box-shadow: 0 0 hsl(262, 87%, 49%) inset;
+  color: hsl(262, 87%, 49%);
   background: hsl(0, 0%, 100%);
-  border: 1px solid hsl(272, 100%, 52%);
+  border: 1px solid hsl(262, 87%, 49%);
 }
 .submit:active {
   transform: scale(0.97);
@@ -744,7 +744,7 @@ input:invalid ~ .error-message {
   width: 100%;
   margin-top: 3.125rem;
   padding: 0.5rem;
-  color: hsl(272, 100%, 52%);
+  color: hsl(262, 87%, 49%);
 }
 .tx-area:focus {
   outline: 1px solid hsl(272, 100%, 64%);
