@@ -56,7 +56,7 @@ img {
 }
 
 header {
-  background: hsl(262, 87%, 49%);
+  background: #7616f3;
   width: 100%;
   position: fixed;
   z-index: 2;
@@ -130,7 +130,7 @@ header {
   justify-content: center;
   overflow: hidden;
   height: 100vh;
-  background: hsl(262, 87%, 49%);
+  background: #7616f3;
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
