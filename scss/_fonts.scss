@@ -16,11 +16,15 @@ $font-weights: (
   "medium": 500,
   "bold": 700,
 );
-$p-color: hsl(272, 100%, 52%);
-$s-color: hsl(272, 100%, 64%);
-$t-color: hsl(272, 92%, 90%);
+
+$p-color: hsl(249, 95%, 60%);
+$s-color: hsl(251, 100%, 71%);
+$t-color: hsl(258, 100%, 88%);
+$q-color: hsl(215, 100%, 93%);
+$qq-color: hsl(224, 60%, 95%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 20%);
+
 h1,
 h2,
 h3 {

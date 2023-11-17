@@ -56,7 +56,7 @@ img {
 }
 
 header {
-  background: #7616f3;
+  background: hsl(249, 95%, 60%);
   width: 100%;
   position: fixed;
   z-index: 2;
@@ -130,7 +130,7 @@ header {
   justify-content: center;
   overflow: hidden;
   height: 100vh;
-  background: #7616f3;
+  background: hsl(249, 95%, 60%);
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
@@ -147,7 +147,7 @@ header {
     width: 100%;
   }
   .navbar__menu .navbar__links .items:hover {
-    background: hsl(262, 87%, 60%);
+    background: hsl(251, 100%, 71%);
     transition: background 250ms ease-in;
     cursor: pointer;
   }
@@ -196,7 +196,7 @@ main .fa-brands {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: hsl(262, 87%, 60%);
+  background: hsl(251, 100%, 71%);
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
@@ -232,12 +232,12 @@ main .fa-brands:hover {
   font-size: 2.375rem;
 }
 .home__name--last {
-  color: hsl(262, 87%, 60%);
+  color: hsl(251, 100%, 71%);
   font-weight: 700;
   font-size: 2.375rem;
 }
 .home .specifics__videoscribe {
-  color: hsl(262, 87%, 60%);
+  color: hsl(251, 100%, 71%);
   font-weight: 700;
   font-size: 2.25rem;
 }
@@ -300,7 +300,7 @@ span {
   position: absolute;
   transform: skewY(-5deg);
   inset: 0;
-  background: linear-gradient(-45deg, hsl(262, 87%, 60%), hsl(262, 87%, 76%), rgba(255, 255, 255, 0.1), hsl(262, 87%, 76%), hsl(262, 87%, 60%));
+  background: linear-gradient(-45deg, hsl(251, 100%, 71%), hsl(258, 100%, 88%), rgba(255, 255, 255, 0.1), hsl(258, 100%, 88%), hsl(251, 100%, 71%));
   z-index: -1;
 }
 
@@ -336,7 +336,7 @@ footer {
 .about .content {
   color: hsl(0, 0%, 100%);
   text-align: justify;
-  background: hsl(262, 87%, 49%);
+  background: hsl(249, 95%, 60%);
   border-radius: 0.3125rem;
   margin: 1rem 0.625rem 1rem; /*! top sides bottom */
   padding: 1rem;
@@ -344,7 +344,7 @@ footer {
 }
 .about .wrapper {
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
-  border: 1px solid hsl(262, 87%, 76%);
+  border: 1px solid hsl(258, 100%, 88%);
   height: 100vh;
   margin: 0 auto;
   padding: 0.625rem;
@@ -376,7 +376,7 @@ footer {
 }
 
 .text-color {
-  color: hsl(262, 87%, 49%);
+  color: hsl(249, 95%, 60%);
 }
 
 .role-color {
@@ -441,7 +441,7 @@ footer {
     font-size: 1.125rem;
     color: hsl(0, 0%, 100%);
     text-align: left;
-    background: hsl(262, 87%, 49%);
+    background: hsl(249, 95%, 60%);
     border-radius: 0.3125rem;
     margin: 1rem 0.625rem 1rem; /*! top sides bottom */
     padding: 1rem;
@@ -491,12 +491,12 @@ footer {
 .projects__item {
   position: relative;
   overflow: hidden;
-  border-bottom: 7px solid hsl(262, 87%, 49%);
+  border-bottom: 7px solid hsl(249, 95%, 60%);
 }
 .projects__item::after {
   content: "";
   position: absolute;
-  background: hsl(262, 87%, 49%);
+  background: hsl(249, 95%, 60%);
   top: 100%;
   left: 0;
   width: 100%;
@@ -533,7 +533,7 @@ footer {
   opacity: 1;
   font-size: 1.125rem;
   transition: all 0.5s ease-in-out;
-  background: hsl(262, 87%, 49%);
+  background: hsl(249, 95%, 60%);
   border-radius: 1.25rem;
   padding: 0.5rem 0.75rem;
 }
@@ -575,7 +575,7 @@ footer {
   }
 }
 strong {
-  color: hsl(262, 87%, 49%);
+  color: hsl(249, 95%, 60%);
 }
 
 .title {
@@ -589,7 +589,7 @@ strong {
   font-size: 1.875rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: hsl(262, 87%, 49%);
+  color: hsl(249, 95%, 60%);
 }
 
 .testo-form {
@@ -641,14 +641,14 @@ input {
   outline: none;
   width: 100%;
   padding: 0.75rem;
-  color: hsl(262, 87%, 49%);
+  color: hsl(249, 95%, 60%);
   font-size: 0.875rem;
 }
 input:focus {
-  outline: 1px solid hsl(262, 87%, 60%);
+  outline: 1px solid hsl(251, 100%, 71%);
 }
 input:is(:focus, :not(:placeholder-shown)) ~ .name-label {
-  color: hsl(262, 87%, 49%);
+  color: hsl(249, 95%, 60%);
   transform: translateY(-1.125rem) translateX(0.3125rem);
   background: hsl(0, 0%, 100%);
   padding-inline: 0.3125rem;
@@ -690,12 +690,12 @@ input:invalid ~ .error-message {
 }
 
 .reset {
-  color: hsl(262, 87%, 49%);
-  background: hsl(262, 87%, 49%);
+  color: hsl(249, 95%, 60%);
+  background: hsl(249, 95%, 60%);
   box-shadow: 0 50px hsl(0, 0%, 100%) inset;
   transition: box-shadow 350ms ease-in-out;
   outline: none;
-  border: 1px solid hsl(262, 87%, 49%);
+  border: 1px solid hsl(249, 95%, 60%);
   border-radius: 0.1875rem;
   font-size: 1.125rem;
   padding: 0.5em 3em;
@@ -704,8 +704,8 @@ input:invalid ~ .error-message {
 .reset:hover {
   box-shadow: 0 0 hsl(0, 0%, 100%) inset;
   color: hsl(0, 0%, 100%);
-  background: hsl(262, 87%, 49%);
-  border: 1px solid hsl(262, 87%, 49%);
+  background: hsl(249, 95%, 60%);
+  border: 1px solid hsl(249, 95%, 60%);
 }
 .reset:active {
   transform: scale(0.97);
@@ -714,20 +714,20 @@ input:invalid ~ .error-message {
 .submit {
   background: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 100%);
-  box-shadow: 0 50px hsl(262, 87%, 49%) inset;
+  box-shadow: 0 50px hsl(249, 95%, 60%) inset;
   transition: box-shadow 350ms ease-in-out;
   outline: none;
-  border: 1px solid hsl(262, 87%, 49%);
+  border: 1px solid hsl(249, 95%, 60%);
   border-radius: 0.1875rem;
   font-size: 1.125rem;
   padding: 0.5em 3em;
   cursor: pointer;
 }
 .submit:hover {
-  box-shadow: 0 0 hsl(262, 87%, 49%) inset;
-  color: hsl(262, 87%, 49%);
+  box-shadow: 0 0 hsl(249, 95%, 60%) inset;
+  color: hsl(249, 95%, 60%);
   background: hsl(0, 0%, 100%);
-  border: 1px solid hsl(262, 87%, 49%);
+  border: 1px solid hsl(249, 95%, 60%);
 }
 .submit:active {
   transform: scale(0.97);
@@ -744,14 +744,14 @@ input:invalid ~ .error-message {
   width: 100%;
   margin-top: 3.125rem;
   padding: 0.5rem;
-  color: hsl(262, 87%, 49%);
+  color: hsl(249, 95%, 60%);
 }
 .tx-area:focus {
-  outline: 1px solid hsl(262, 87%, 60%);
+  outline: 1px solid hsl(251, 100%, 71%);
 }
 
 .tx {
-  color: hsl(262, 87%, 60%);
+  color: hsl(251, 100%, 71%);
   width: max-content;
   margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
