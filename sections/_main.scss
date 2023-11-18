@@ -63,12 +63,13 @@ main {
 
   &__name {
     font-size: f.rem(38);
+
     // border-bottom: 1px solid $t-color;
     // padding-bottom: f.rem(5);
 
     &--last {
       color: $s-color;
-      font-weight: map-get($font-weights, "bold");
+      // font-weight: map-get($font-weights, "bold");
       font-size: f.rem(38);
     }
   }
