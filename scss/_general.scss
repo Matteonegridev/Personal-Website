@@ -17,9 +17,14 @@ $black: hsl(0, 0%, 20%);
   box-sizing: border-box;
 }
 
+:root {
+  color-scheme: light;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: $white;
+    color: $black;
   }
 }
 html {
