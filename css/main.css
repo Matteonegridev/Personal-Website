@@ -304,7 +304,14 @@ span {
   position: absolute;
   transform: skewY(-5deg);
   inset: 0;
-  background: linear-gradient(-45deg, hsl(224, 60%, 95%), hsl(215, 100%, 93%), rgba(255, 255, 255, 0.2), hsl(215, 100%, 93%), hsl(224, 60%, 95%));
+  background: linear-gradient(
+    -45deg,
+    hsl(224, 60%, 95%),
+    hsl(215, 100%, 93%),
+    rgba(255, 255, 255, 0.2),
+    hsl(215, 100%, 93%),
+    hsl(224, 60%, 95%)
+  );
   z-index: -1;
 }
 
@@ -758,4 +765,4 @@ input:invalid ~ .error-message {
   color: hsl(249, 95%, 64%);
   width: max-content;
   margin: 0 auto;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

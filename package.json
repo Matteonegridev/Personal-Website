@@ -1,0 +1,11 @@
+{
+  "name": "nuovo-progetto-sass",
+  "version": "1.0.0",
+  "description": "code used HTML & scss",
+  "main": "index.js",
+  "scripts": {
+    "copy-css": " copy dist\\main.css css\\"
+  },
+  "author": "",
+  "license": "ISC"
+}
