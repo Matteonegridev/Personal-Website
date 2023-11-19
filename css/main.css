@@ -270,7 +270,7 @@ span {
     position: absolute;
     top: 2.25rem;
     right: -4.6875rem;
-    background: url(pics/foto.png) center no-repeat;
+    background: url(../pics/foto.png) center no-repeat;
     background-size: contain;
   }
   .align-text {
