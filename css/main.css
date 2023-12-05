@@ -148,7 +148,7 @@ header {
   font-size: 1.5rem;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 810px) {
   .navbar__menu .navbar__links .items {
     width: 100%;
   }
@@ -296,6 +296,9 @@ span {
   .specifics__videoscribe {
     font-family: "BebasNeue";
   }
+  .personal-logo {
+    display: none;
+  }
 }
 .diagonal {
   position: relative;
@@ -307,6 +310,12 @@ span {
   inset: 0;
   background: linear-gradient(-45deg, hsl(224, 60%, 95%), hsl(215, 100%, 93%), rgba(255, 255, 255, 0.2), hsl(215, 100%, 93%), hsl(224, 60%, 95%));
   z-index: -1;
+}
+
+.personal-logo {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 9.375rem;
 }
 
 footer {
