@@ -465,7 +465,16 @@ footer {
     display: grid;
     place-items: center;
   }
+  .personal-logo {
+    display: none;
+  }
 }
+.personal-logo {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 9.375rem;
+}
+
 .social__icons-projects {
   position: absolute;
   bottom: 1rem;
@@ -587,7 +596,16 @@ footer {
     font-size: 1.625rem;
     background: none;
   }
+  .personal-logo {
+    display: none;
+  }
 }
+.personal-logo {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 9.375rem;
+}
+
 strong {
   color: hsl(249, 95%, 60%);
 }
@@ -768,4 +786,16 @@ input:invalid ~ .error-message {
   color: hsl(249, 95%, 64%);
   width: max-content;
   margin: 0 auto;
+}
+
+.personal-logo {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 9.375rem;
+}
+
+@media screen and (min-width: 811px) {
+  .personal-logo {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

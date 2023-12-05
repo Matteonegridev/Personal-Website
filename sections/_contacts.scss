@@ -248,3 +248,13 @@ input {
   // text-align: center;
   margin: 0 auto;
 }
+.personal-logo {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: f.rem(150);
+}
+@include m.media-m {
+  .personal-logo {
+    display: none;
+  }
+}

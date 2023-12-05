@@ -138,4 +138,12 @@ $black: hsl(0, 0%, 20%);
     font-size: f.rem(26);
     background: none;
   }
+  .personal-logo {
+    display: none;
+  }
+}
+.personal-logo {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: f.rem(150);
 }
